@@ -272,3 +272,4 @@ bin/*
 *.html
 *.gv
 doc/
+.DS_Store
