@@ -22,8 +22,8 @@ static string psBlendFragShaderGL2 = "#version 120\n \
         vec4 baseCol = texture2DRect(base, gl_TexCoord[0].st);
         vec4 blendCol = texture2DRect(blendTgt, gl_TexCoord[0].st);
         vec4 result;
-        //baseCol.rgb *= baseCol.a;
-        //blendCol.rgb *= blendCol.a;
+        // baseCol.rgb *= baseCol.a;
+        // blendCol.rgb *= blendCol.a;
         if (mode == 0) // Normal
         {
             if (blendCol.a <= 0.0) {
@@ -107,8 +107,8 @@ static string psBlendFragShaderGL3 = "#version 150\n" STRINGIFY(
         vec4 baseCol = texture(base, texCoordVarying.st);
         vec4 blendCol = texture(blendTgt, texCoordVarying.st);
         vec4 result;
-        //baseCol.rgb *= baseCol.a;
-        //blendCol.rgb *= blendCol.a;
+        // baseCol.rgb *= baseCol.a;
+        // blendCol.rgb *= blendCol.a;
         if (mode == 0) // Normal
         {
             if (blendCol.a <= 0.0) {
@@ -204,7 +204,7 @@ public:
         ofPushStyle();
         ofPushMatrix();
         base.begin();
-        // ofClear(0, 0, 0);
+        ofClear(0, 0, 0);
     }
     
     void end()
